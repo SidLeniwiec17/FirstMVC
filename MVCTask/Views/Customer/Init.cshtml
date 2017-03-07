@@ -5,6 +5,9 @@
 }
 
 <h2>Starting page to load data</h2>
-Select XML file to upload !
-<input type="file" name="xmlUploader" />
-
+<label for="file">Select XML file to upload !</label>
+@using (Html.BeginForm("Show", "Customer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="xmlFile" accept=".xml" /><br>
+    <input type="submit" value="Upload" />
+}

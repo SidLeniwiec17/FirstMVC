@@ -9,7 +9,7 @@ namespace MVCTask.Models
     {
         public String Name { get; set; }
         public String Surname { get; set; }
-        public int number { get; set; }
-        public string email { get; set; }
+        public int Number { get; set; }
+        public string Email { get; set; }
     }
 }
